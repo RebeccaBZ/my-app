@@ -1,6 +1,8 @@
 import "./NavbarStyles.css"
 import {Component} from "react"
 import { MenuItems } from "./MenuItems";
+import {Link} from "react-router-dom"
+//import {BrowserRouter as Router} from 'react-router-dom';
 
 class Navbar extends Component{
     state = {clicked: false};
@@ -11,8 +13,6 @@ class Navbar extends Component{
         return(
         <nav className="NavbarItems">
             <h1 className="navbar-logo">BMW
-            <i>
-                </i>
                 </h1>
 
             <div className="menu-icons" onClick={
@@ -24,11 +24,10 @@ class Navbar extends Component{
                 {MenuItems.map((item, index)=>{
                     return(
                         <li key={index}>
-                    <a className={item.cName} href="/">
-                    <i className={item.icon}>{item.title}</i>
-                    </a>
-                
 
+                    <Link className={item.cName} to={item.url}>
+                    <i className={item.icon}></i>{item.title}
+                    </Link>
                 </li>
                     )
                 }
