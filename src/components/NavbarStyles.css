@@ -1,0 +1,118 @@
+.NavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.25);
+  width: 95%;
+  height: 65px;
+  border-radius: 15px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.navbar-logo{
+  color: black; 
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 2px;
+  margin-left: 10px;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links{
+   text-decoration: none;
+   color: black;
+   font-size: 1rem;
+   font-weight: 600;
+   padding: 0.7rem 1rem; 
+}
+
+.nav-links i{
+    padding-right: 10px;
+}
+
+.nav-links:hover{
+    background-color: rgb(115, 147, 179);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icons{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:0;
+        left:-100%;
+        opacity: 0;
+        align-items: stretch;
+        padding: 50px 0 30px 0;
+        margin: 0;
+
+    }
+
+    .nav-menu.active{
+        left:0;
+        opacity: 1;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        /*border: 10px;
+        border-color: black
+        */
+    }
+
+    .nav-links{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        padding: 1rem 1rem; 
+     }
+
+    .nav-links:hover{
+        background-color: rgb(115, 147, 179);
+        color: white;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .NavbarItems{
+        z-index: 99;
+    }
+
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icons i{
+        font-size: 1.5rem;
+        color: black;
+    }
+}
