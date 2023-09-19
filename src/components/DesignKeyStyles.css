@@ -1,0 +1,100 @@
+.designkey{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.designkey-text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.designkey-text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    margin-top: 150px;
+    opacity: 0.8;
+}
+
+.designkey-text p{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    padding: 2rem 0 2 rem 0;
+    margin-top: 400px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.designkey-text .show{
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(115, 147, 179);
+}
+
+.designkey-about h1{
+    padding-top: 200px;
+    opacity: 0.9;
+    font-size: 70px;
+
+}
+
+.designkey-services img{
+    height: 750px;
+}
+
+.designkey-services h1{
+    padding-top: 200px;
+    opacity: 0.9;
+    font-size: 70px;
+}
+
+.designkey-contactus img{
+    height: 750px;
+}
+
+.designkey-contactus h1{
+    padding-top: 200px;
+    opacity: 0.9;
+    font-size: 70px;
+}
+
+.designkey-about img{
+    height: 750px;
+}
+@media screen and  (max-width: 850px ){
+    .designkey-text h1{
+        padding: 10px 20px;
+    }
+
+    .designkey-text p{
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
+
+    }
+
+    .designkey-text .show{
+        text-decoration: none;
+        background-color:rgb(115, 147, 179) ;
+        border-radius: 8px;
+        padding: 0.8rem 1rem ;
+        font-size: 1rem;
+    }
+
+}

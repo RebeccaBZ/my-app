@@ -8,6 +8,8 @@
   height: 65px;
   border-radius: 15px;
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.478);
+  /*z-index: 99999;*/
   top: 30px;
   left: 50%;
   transform: translate(-50%);
@@ -49,6 +51,12 @@
     transition: all 0.3s ease-in-out;
 }
 
+.navbar-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 3px;
+}
 .nav-links-mobile{
     display: none;
 }

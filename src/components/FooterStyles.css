@@ -1,0 +1,37 @@
+.footer{
+    padding: 4rem 6rem;
+    background-color:rgb(115, 147, 179);
+    color: white;
+}
+
+.top{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.bottom{
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h4{
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.bottom a{
+    color: aliceblue;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    text-decoration: wavy;
+    font-weight: 100;
+}

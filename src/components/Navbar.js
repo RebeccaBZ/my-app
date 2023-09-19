@@ -2,6 +2,8 @@ import "./NavbarStyles.css"
 import {Component} from "react"
 import { MenuItems } from "./MenuItems";
 import {Link} from "react-router-dom"
+import logo from '../assets/bmwlogo.png'
+
 //import {BrowserRouter as Router} from 'react-router-dom';
 
 class Navbar extends Component{
@@ -12,8 +14,10 @@ class Navbar extends Component{
     render(){
         return(
         <nav className="NavbarItems">
-            <h1 className="navbar-logo">BMW
+            <h1 className="navbar-logo">
+            <img alt="logo" src={logo}></img>
                 </h1>
+            
 
             <div className="menu-icons" onClick={
                 this.handleClick

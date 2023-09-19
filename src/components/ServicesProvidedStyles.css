@@ -1,0 +1,31 @@
+.services h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.services p{
+    padding-top: 2px;
+    padding-bottom: 30px;
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+}
+
+.services ul{
+    padding-top: 2px;
+    padding-bottom: 30px;
+    text-justify: auto;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.services li{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+.culture{
+    margin: 4rem 6rem;
+
+}
+
+.culture h1{
+    font-size: 3rem;
+    color: rgb(115, 147, 179);
+    font-weight: 800;
+}
+
+.culture1-desc h2{
+    font-weight: 800;
+    color: rgb(62, 79, 96);
+    text-align: center;
+    
+}
+
+.culture1-desc:hover h2{
+   transform: scale(1.2);
+   transition: 0.5s ease-in-out;
+    
+}
+
+.culture1-desc p{
+    font-weight: 400;
+    color: black;
+    text-align: justify;
+    font-size: 25px;
+    
+}
+.culture-nm{
+
+    justify-content: space-between;
+    /*flex-direction: column;*/
+    margin-top: 4.5rem;
+    transition: ease-in-out;
+    
+}
+
+.culture1-desc{
+    width: 50%;
+    text-align: start;
+    font-size: 1.1rem ;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.culture1-img{
+    position: center;
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    border: 10px solid rgb(115, 147, 179);
+    box-shadow: 3px 3px 10px rgba(181, 160, 160, 0.3);
+    opacity: 0.9;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.culture1-img img{
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+.culture1-img:hover img{
+    transform: scale(1.2);
+}

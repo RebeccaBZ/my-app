@@ -1,10 +1,21 @@
+import Navbar from "../components/Navbar";
+import DesignKey from "../components/DesignKey";
+import AboutUsImgTeam from '../assets/team.jpeg';
+import Footer from "../components/Footer";
+import AboutUs from "../components/AboutUs";
+
 function About (){
     return(
         <>
-        <h1>
-        About Page
-    </h1>
-    </>
+        <Navbar/>
+        <DesignKey cName="designkey-about" 
+        designkeyImg = {AboutUsImgTeam}
+        title="About Us"
+        />
+        <AboutUs/>
+        <Footer/>
+        
+        </>
     );
 }
 

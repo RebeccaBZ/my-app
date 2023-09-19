@@ -1,10 +1,21 @@
+import Navbar from "../components/Navbar";
+import DesignKey from "../components/DesignKey";
+import ServicesImg from '../assets/digitaization.jpg';
+import Footer from "../components/Footer";
+import ServicesProvided from "../components/ServicesProvided";
+
 function Services (){
     return(
         <>
-        <h1>
-        Services Page
-    </h1>
-    </>
+        
+        <DesignKey cName="designkey-services" 
+        designkeyImg = {ServicesImg}
+        title="Our Services"
+        />
+        <Navbar/>
+        <ServicesProvided/>
+        <Footer/>
+        </>
     );
 }
 
